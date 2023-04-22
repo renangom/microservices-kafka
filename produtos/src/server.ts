@@ -1,12 +1,13 @@
 import express from 'express';
-import { productRouter } from './infra/routes';
+import { productRoute } from './infra/routes';
+
 
 
 const server = express();
-const PORT = process.env.PORT ?? 3002;
+const PORT = process.env.PORT ?? 3003;
 
 server.use(express.json());
-server.use(productRouter);
+server.use(productRoute);
 
 
 server.listen(PORT, () => {

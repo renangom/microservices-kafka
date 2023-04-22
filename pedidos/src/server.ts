@@ -1,5 +1,5 @@
 import express from 'express';
-import "./infra/providers/kafka/consumers"
+import "./infra/providers/kafka/consumers/index"
 
 
 const server = express();
